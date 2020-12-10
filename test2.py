@@ -1,12 +1,11 @@
 #!/usr/local/bin/python3
-x = 29
-if x < 10:
-    print('small')
-elif x <20:
-    print('med')
-elif x <40:
-    print('super')
-elif x <30:
-    print('large')
-else:
-    print('super large')
+def greeting(input):
+    try:
+        name = str(input)
+    except:
+        name = -1
+        print("Please input your name")
+
+
+    return"Hello" +name
+print(greeting("Connect"))
